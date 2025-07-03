@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Фиксируем шапку */
+    top: 0; /* Устанавливаем на верхнюю часть экрана */
+    left: 0; /* Устанавливаем на левую границу экрана */
+    width: 100%; /* Ширина на всю ширину экрана */
+    z-index: 1; /* Обеспечиваем, чтобы шапка была над другими элементами */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* вертикальное выравнивание */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav {
+    flex-grow: 1; /* Занять доступное пространство */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирование ссылок навигации */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* добавление перехода при наведении */
+nav ul li a:hover {
+    color:#8f8f8f;
+    transition: 0.3s;
+}
+.social-links {
+    display: flex;
+    align-items: center; /* Центрирование иконок социальных сетей */
+    margin-right: 20px;
+}
+
+.social-links a {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.sitemap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.column {
+  flex: 1 1 180px;
+  margin: 10px;
+}
+
+.column h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.column ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .sitemap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column {
+    margin-bottom: 20px;
+  }
+}

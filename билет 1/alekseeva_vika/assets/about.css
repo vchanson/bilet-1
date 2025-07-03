@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Фиксируем шапку */
+    top: 0; /* Устанавливаем на верхнюю часть экрана */
+    left: 0; /* Устанавливаем на левую границу экрана */
+    width: 100%; /* Ширина на всю ширину экрана */
+    z-index: 1; /* Обеспечиваем, чтобы шапка была над другими элементами */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* вертикальное выравнивание */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav {
+    flex-grow: 1; /* Занять доступное пространство */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирование ссылок навигации */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* добавление перехода при наведении */
+nav ul li a:hover {
+    color:#8f8f8f;
+    transition: 0.3s;
+}
+.social-links {
+    display: flex;
+    align-items: center; /* Центрирование иконок социальных сетей */
+    margin-right: 20px;
+}
+
+.social-links a {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* Общие стили для секции "О нас" */
+.about-us {
+  display: flex;
+  flex-direction: row; /* Текст и изображение располагаются горизонтально */
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px; /* Ограничение максимальной ширины контента */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff; /* Белый фон */
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Стили для текстового контента */
+.about-us__content {
+  flex: 1; /* Занимает большую часть пространства */
+  padding: 20px;
+}
+
+.about-us__title {
+  font-size: 2.5em;
+  color: #333; /* Темно-серый заголовок */
+  margin-bottom: 20px;
+  text-align: left;
+  border-bottom: 2px solid #eee; /* Горизонтальная линия под заголовком */
+  padding-bottom: 10px;
+}
+
+.about-us__text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555; /* Серый текст */
+  margin-bottom: 15px;
+  text-align: justify; /* Выравнивание текста по ширине */
+}
+
+/* Стили для изображения */
+.about-us__image {
+  flex: 1; /* Занимает часть пространства (рядом с текстом) */
+  max-width: 50%; /* Максимальная ширина изображения */
+  padding: 20px;
+}
+
+.about-us__image img {
+  width: 80%; /* Изображение занимает всю доступную ширину */
+  height: auto; /* Сохранение пропорций изображения */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Корректное отображение изображения в контейнере */
+  object-position: center; /* Позиционирование изображения по центру */
+}
+
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.sitemap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.column {
+  flex: 1 1 180px;
+  margin: 10px;
+}
+
+.column h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.column ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .sitemap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column {
+    margin-bottom: 20px;
+  }
+}

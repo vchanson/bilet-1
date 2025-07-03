@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование маршрута</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="shortcut icon" href="img/sun-icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип агентсва" width="40px" height="40px">
+            <strong>Фортуна2</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="search.html">Услуги</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Поиск...">
+            <button>Найти</button>
+        </div>
+    </header>
+    <div id="#booking-id" class="booking">
+        <h1>Бронирование маршрута</h1>
+
+        <form action="#" method="POST">
+            <label for="region">Регион:</label>
+            <input type="text" id="region" name="region" readonly>
+
+            <label for="route">Наименование маршрута:</label>
+            <input type="text" id="route" name="route" readonly>
+
+            <label for="dates">Предполагаемые даты:</label>
+            <input type="text" id="dates" name="dates" readonly>
+
+            <label for="people">Количество человек:</label>
+            <input type="number" id="people" name="people" value="1" min="1">
+
+            <h2>Дополнительные услуги</h2>
+            <div class="service">
+                <input type="checkbox" id="guide" name="guide">
+                <label for="guide">Услуги проводника (+2000 руб.)</label>
+            </div>
+            <div class="service">
+                <input type="checkbox" id="equipment" name="equipment">
+                <label for="equipment">Услуги аренды туристического оборудования (+1500 руб.)</label>
+            </div>
+            <div class="service">
+                <input type="checkbox" id="photographer" name="photographer">
+                <label for="photographer">Услуги фотографа/видеооператора (+3000 руб.)</label>
+            </div>
+            <div class="service">
+                <input type="checkbox" id="insurance" name="insurance">
+                <label for="insurance">Страхование от несчастных случаев (+500 руб.)</label>
+            </div>
+
+            <label for="comment">Дополнительный комментарий к заказу:</label>
+            <textarea id="comment" name="comment"></textarea>
+
+            <label for="email">Email заказчика:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="total-section">
+                <p>Итоговая стоимость: <span id="base-price">10000</span> руб.</p>
+                <p class="service-price guide-price">Услуги проводника: +2000 руб.</p>
+                <p class="service-price equipment-price">Аренда оборудования: +1500 руб.</p>
+                <p class="service-price photographer-price">Фотограф/видеооператор: +3000 руб.</p>
+                <p class="service-price insurance-price">Страхование: +500 руб.</p>
+                <p>Общая стоимость: <span id="total-price">10000</span> руб.</p> <!-- Начальная стоимость -->
+            </div>
+
+            <button type="submit">Оформить бронирование</button>
+        </form>
+
+        <p><a href="search.html">Вернуться к результатам поиска</a></p>
+    </div>
+
+    <footer>
+        <div class="sitemap">
+
+            <ul>
+                <li>
+                <a href="../index.html"><h2>Главная страница</h2></a>
+                <ul>
+                    <li><a href="../index.html#search-tour">Поиск маршрута</a></li>
+                    <li><a href="../index.html#how">Как забронировать тур</a></li>
+                    <li><a href="../index.html#reviews">Отзывы</a></li>
+                    <li><a href="../index.html#subscribe">Подписка на обновления</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="about.html"><h2>О компании</h2></a>
+                <ul>
+                    <li><a href="about.html#goal">Цель</a></li>
+                    <li><a href="about.html#info">Общая информация</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="search.html"><h2>Услуги</h2></a>
+                <ul>
+                    <li><a href="search.html#search-id">Поиск маршрутов</a></li>
+                    <li><a href="booking.html#booking-id">Бронь маршрута</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="contacts.html"><h2>Контакты</h2></a>
+                <ul>
+                    <li>Телефон: +7(812) ХХХ-ХХ-ХХ</li>
+                    <li>Email: <a href="mailto:info@fortuna-2.ru">info@fortuna-2.ru</a></li>
+                    <li>Адрес: Фортунная ул.11</li>
+                    <li>Инстаграм: <a href="https://instagram.com/fortyna2" target="_blank">@fortyna2</a></li>
+                    <li>Фейсбук: <a href="https://facebook.com/fortyna2" target="_blank">@fortyna2</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

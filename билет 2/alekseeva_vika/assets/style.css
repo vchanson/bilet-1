@@ -1,0 +1,241 @@
+/* Общие стили для сайта */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Шапка сайта */
+header {
+    background: #4c77af;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Фиксируем шапку */
+    top: 0; /* Устанавливаем на верхнюю часть экрана */
+    left: 0; /* Устанавливаем на левую границу экрана */
+    width: 100%; /* Ширина на всю ширину экрана */
+    z-index: 1; /* Обеспечиваем, чтобы шапка была над другими элементами */
+}
+button{
+    padding: 7px 10px;
+    background-color: #4c77af;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: -5px;
+}
+button:hover{
+    background-color: #2d496d;
+    transition: 0.3s ease;
+}
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+header strong {
+    margin-left: 20px;
+}
+header img {
+    margin-left: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center; /* вертикальное выравнивание */
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .search-box {
+    display: flex;
+}
+
+header .search-box input {
+    padding: 5px;
+    border: none;
+}
+
+.search-box{
+    margin-right: 50px;
+}
+/* Основной контент */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.search-section{
+    margin-top: 6%;
+}
+
+/* Секция поиска */
+.search-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-section input,
+.search-section select {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* Секция подписки */
+.subscription-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subscription-section input {
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Секция алгоритма бронирования */
+.booking-steps-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.booking-steps-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.steps {
+  flex: 1;
+}
+
+.steps-image {
+  flex: 1;
+  text-align: center;
+}
+
+.steps-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.step {
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
+
+.step:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 768px) {
+  .booking-steps-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Подвал сайта */
+footer {
+    background-color: #4c77af;
+    color: white;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+footer .sitemap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+footer .sitemap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .sitemap > ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer .sitemap > ul > li {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+footer .sitemap h1 {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer .sitemap h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+footer .sitemap li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: text-decoration 0.2s ease;
+}
+
+footer .sitemap li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    footer .sitemap > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .sitemap > ul > li {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer {
+        text-align: left;
+    }
+}

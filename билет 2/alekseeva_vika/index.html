@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фортуна2</title>
+    <link rel="stylesheet" href="assets/style.css"> <!-- Подключение CSS -->
+    <link rel="shortcut icon" href="assets/img/sun-icon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Логотип агентсва" width="40px" height="40px">
+            <strong>Фортуна2</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="assets/about.html">О компании</a></li>
+                <li><a href="assets/search.html">Услуги</a></li>
+                <li><a href="assets/contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Поиск...">
+            <button>Найти</button>
+        </div>
+    </header>
+
+    <main  id="search-tour">
+        <section class="search-section">
+            <h2>Найдите свой идеальный маршрут!</h2>
+            <form action="assets/search.html" method="GET">
+                <label for="region">Регион:</label>
+                <select id="region" name="region">
+                    <option value="altai">Алтай</option>
+                    <option value="baikal">Байкал</option>
+                    <option value="karelia">Карелия</option>
+                </select>
+
+                <label for="dates">Предполагаемые даты:</label>
+                <input type="date" id="dates" name="dates">
+
+                <label for="participants">Количество участников:</label>
+                <input type="number" id="participants" name="participants" value="1" min="1">
+
+                <button type="submit">Найти маршруты</button>
+            </form>
+        </section>
+
+        <section id="how" class="booking-steps-section">
+            <h2>Как забронировать тур:</h2>
+            <div class="booking-steps-wrapper">
+                <div class="steps">
+                <div class="step">Шаг 1: Выберите направление</div>
+                <div class="step">Шаг 2: Укажите даты и количество человек</div>
+                <div class="step">Шаг 3: Забронируйте тур!</div>
+                </div>
+                <div class="steps-image">
+                <img src="images/booking-illustration.png" alt="Инфографика бронирования">
+                </div>
+            </div>
+        </section>
+
+    </main> 
+
+    <footer>
+        <div class="sitemap">
+
+            <ul>
+                <li>
+                <a href="index.html"><h2>Главная страница</h2></a>
+                <ul>
+                    <li><a href="#search-tour">Поиск маршрута</a></li>
+                    <li><a href="#how">Как забронировать тур</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#subscribe">Подписка на обновления</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="assets/about.html"><h2>О компании</h2></a>
+                <ul>
+                    <li><a href="assets/about.html#goal">Цель</a></li>
+                    <li><a href="assets/about.html#info">Общая информация</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="assets/search.html"><h2>Услуги</h2></a>
+                <ul>
+                    <li><a href="assets/search.html#search-id">Поиск маршрутов</a></li>
+                    <li><a href="assets/booking.html#booking-id">Бронь маршрута</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="assets/contacts.html"><h2>Контакты</h2></a>
+                <ul>
+                    <li>Телефон: +7(812) ХХХ-ХХ-ХХ</li>
+                    <li>Email: <a href="mailto:info@fortuna-2.ru">info@fortuna-2.ru</a></li>
+                    <li>Адрес: Фортунная ул.11</li>
+                    <li>Инстаграм: <a href="https://instagram.com/fortyna2" target="_blank">@fortyna2</a></li>
+                    <li>Фейсбук: <a href="https://facebook.com/fortyna2" target="_blank">@fortyna2</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

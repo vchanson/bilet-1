@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Фиксируем шапку */
+    top: 0; /* Устанавливаем на верхнюю часть экрана */
+    left: 0; /* Устанавливаем на левую границу экрана */
+    width: 100%; /* Ширина на всю ширину экрана */
+    z-index: 1; /* Обеспечиваем, чтобы шапка была над другими элементами */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* вертикальное выравнивание */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav {
+    flex-grow: 1; /* Занять доступное пространство */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирование ссылок навигации */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* добавление перехода при наведении */
+nav ul li a:hover {
+    color:#8f8f8f;
+    transition: 0.3s;
+}
+.social-links {
+    display: flex;
+    align-items: center; /* Центрирование иконок социальных сетей */
+    margin-right: 20px;
+}
+
+.social-links a {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.gallery {
+    overflow: hidden; /* Обеспечить, чтобы изображения пропускали через родительский контейнер */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.banner {
+    display: flex; /* Используем Flexbox для расположения элементов в ряд */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    flex-wrap: wrap; /* Позволяем элементам переходить на новую строку при необходимости */
+}
+
+.gallery-item {
+    flex: 1 1 calc(30% - 20px); /* Каждый элемент занимает треть строки, с учетом отступа */
+    box-sizing: border-box; /* Учитываем отступы и границы в общей ширине */
+    padding: 15px; /* Добавляем отступы для визуального разделения элементов */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    margin: 15px;
+}
+.gallery-item:hover {
+    transform: scale(1.02); /* Увеличение при наведении */
+}
+.gallery-item b {
+    display: block; /* Делаем подпись блочным элементом */
+    margin-bottom: 15px; /* Добавляем отступ сверху для отделения от изображения */
+    font-size: 16px; /* Размер шрифта для подписи */
+}
+
+.gallery-item img {
+    width: 100%; /* Изображения занимают всю ширину контейнера */
+    height: 70%; /* Сохраняем пропорции изображений */
+}
+
+.gallery-item b {
+    display: block; /* Делаем подпись блочным элементом */
+    margin-top: 10px; /* Добавляем отступ сверху для отделения от изображения */
+    font-size: 16px; /* Размер шрифта для подписи */
+}
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.sitemap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.column {
+  flex: 1 1 180px;
+  margin: 10px;
+}
+
+.column h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.column ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .sitemap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,169 @@
+/* Общие стили для сайта */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Шапка сайта */
+header {
+    background: #4c77af;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Фиксируем шапку */
+    top: 0; /* Устанавливаем на верхнюю часть экрана */
+    left: 0; /* Устанавливаем на левую границу экрана */
+    width: 100%; /* Ширина на всю ширину экрана */
+    z-index: 1; /* Обеспечиваем, чтобы шапка была над другими элементами */
+}
+button{
+    padding: 7px 10px;
+    background-color: #4c77af;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: -5px;
+}
+button:hover{
+    background-color: #2d496d;
+    transition: 0.3s ease;
+}
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+header strong {
+    margin-left: 20px;
+}
+header img {
+    margin-left: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center; /* вертикальное выравнивание */
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .search-box {
+    display: flex;
+}
+
+header .search-box input {
+    padding: 5px;
+    border: none;
+}
+
+.search-box{
+    margin-right: 50px;
+}
+
+.company-info-section {
+  max-width: 800px;
+  margin: 10% auto;
+  padding: 30px;
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.company-info-section h2 {
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #cbd5e1;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.company-info-section h3 {
+  font-size: 1.5rem;
+  color: #4c77af;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.company-info-section p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+footer {
+    background-color: #4c77af;
+    color: white;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+footer .sitemap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+footer .sitemap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .sitemap > ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer .sitemap > ul > li {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+footer .sitemap h1 {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer .sitemap h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+footer .sitemap li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: text-decoration 0.2s ease;
+}
+
+footer .sitemap li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,283 @@
+/* Общие стили для сайта */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Шапка сайта */
+header {
+    background: #4c77af;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Фиксируем шапку */
+    top: 0; /* Устанавливаем на верхнюю часть экрана */
+    left: 0; /* Устанавливаем на левую границу экрана */
+    width: 100%; /* Ширина на всю ширину экрана */
+    z-index: 1; /* Обеспечиваем, чтобы шапка была над другими элементами */
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+header strong {
+    margin-left: 20px;
+}
+header img {
+    margin-left: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center; /* вертикальное выравнивание */
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .search-box {
+    display: flex;
+}
+
+header .search-box input {
+    padding: 5px;
+    border: none;
+}
+
+header .search-box button {
+    padding: 5px 10px;
+    background-color: #4c77af;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.search-box{
+    margin-right: 50px;
+}
+.booking {
+  width: 90%;
+  margin: 10% auto 50px auto;
+  padding: 40px;
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  color: #333;
+}
+/* Скрываем стандартный чекбокс */
+.service input[type="checkbox"] {
+  display: none;
+}
+
+/* Стилизация чекбокса и галочки */
+.service label {
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Квадратный чекбокс */
+.service label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2563eb;
+  border-radius: 4px;
+  background-color: white;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
+}
+
+/* Галочка */
+.service input[type="checkbox"]:checked + label::after {
+  content: "✔";
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  font-size: 16px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* Наведение */
+.service label:hover::before {
+  background-color: #e0edff;
+}
+/* Заголовки */
+.booking h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1e40af;
+}
+
+.booking h2 {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #4c77af;
+}
+
+/* Формы */
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.booking label {
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block;
+  color: #1f2937;
+}
+
+.booking input[type="text"],
+.booking input[type="number"],
+.booking input[type="email"],
+.booking textarea {
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.booking textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Чекбоксы */
+.service {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Блок цен */
+.total-section {
+  margin-top: 30px;
+  background-color: #f1f5f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.total-section p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.total-section span {
+  font-weight: bold;
+  color: #4c77af;
+}
+
+/* Кнопка */
+.booking button[type="submit"] {
+  background-color: #4c77af;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.booking button[type="submit"]:hover {
+  background-color: #1e3a8a;
+}
+
+/* Ссылки */
+.booking a {
+  color: #2563eb;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer {
+    background-color: #4c77af;
+    color: white;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+footer .sitemap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+footer .sitemap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .sitemap > ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer .sitemap > ul > li {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+footer .sitemap h1 {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer .sitemap h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+footer .sitemap li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: text-decoration 0.2s ease;
+}
+
+footer .sitemap li a:hover {
+    text-decoration: underline;
+}

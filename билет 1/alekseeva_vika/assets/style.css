@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* стиль для шапки */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Фиксируем шапку */
+    top: 0; /* Устанавливаем на верхнюю часть экрана */
+    left: 0; /* Устанавливаем на левую границу экрана */
+    width: 100%; /* Ширина на всю ширину экрана */
+    z-index: 1; /* Обеспечиваем, чтобы шапка была над другими элементами */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* вертикальное выравнивание */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav {
+    flex-grow: 1; /* Занять доступное пространство */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирование ссылок навигации */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* добавление перехода при наведении */
+nav ul li a:hover {
+    color:#8f8f8f;
+    transition: 0.3s;
+}
+.social-links {
+    display: flex;
+    align-items: center; /* Центрирование иконок социальных сетей */
+    margin-right: 20px;
+}
+
+.social-links a {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+/*  */
+main {
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+.booking {
+    display: flex;
+    flex-direction: column; /* вертикальная ориентация */
+    align-items: center; /* центрирование по горизонтали */
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.booking form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%; /* Устойчивость ширины формы */
+}
+
+.booking input, .booking button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.booking button {
+    grid-column: span 2; /* Кнопка занимает две колонки */
+    margin-top: 20px; /* Отступ сверху для кнопки */
+    background-color: #6b6b6b; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Курсор становится указателем */
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+.booking button:hover {
+    background-color: #383838; /* Цвет кнопки при наведении */
+}
+.gallery {
+    overflow: hidden; /* Обеспечить, чтобы изображения пропускали через родительский контейнер */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.banner {
+    display: flex; /* Используем Flexbox для расположения элементов в ряд */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    flex-wrap: wrap; /* Позволяем элементам переходить на новую строку при необходимости */
+}
+
+.gallery-item {
+    width: 33%; /* Каждое изображение занимает 1/3 ширины контейнера */
+    box-sizing: border-box; /* Учитываем отступы и границы в общей ширине */
+    padding: 10px; /* Добавляем отступы для визуального разделения элементов */
+}
+
+.gallery-item img {
+    width: 100%; /* Изображения занимают всю ширину контейнера */
+    height: 70%; /* Сохраняем пропорции изображений */
+}
+
+.gallery-item span {
+    display: block; /* Делаем подпись блочным элементом */
+    margin-top: 10px; /* Добавляем отступ сверху для отделения от изображения */
+    font-size: 16px; /* Размер шрифта для подписи */
+}
+
+.studios {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.studio-banner {
+    display: flex;
+    width: 100%;
+}
+
+.studio-item {
+    flex: 1; /* Каждому элементу присваиваем равную ширину */
+    display: flex;
+    flex-direction: column; /* Выстраиваем элементы вертикально */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    padding: 10px;
+}
+
+.studio-item img {
+    width: 100%; /* Заставляем изображения занимать всю ширину контейнера */
+    height: 70%; /* Сохраняем пропорции изображения */
+}
+
+.studio-item p {
+    text-align: center; /* Выравниваем текст по центру */
+    margin-top: 10px; /* Отступ сверху для текста */
+}
+.animated-image-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f7f7f7;
+    border-top: 2px solid #ddd;
+    width: 100%;
+    text-align: center;
+}
+
+.animated-image-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.animated-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.animated-image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация появления */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.sitemap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.column {
+  flex: 1 1 180px;
+  margin: 10px;
+}
+
+.column h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.column ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .sitemap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column {
+    margin-bottom: 20px;
+  }
+}

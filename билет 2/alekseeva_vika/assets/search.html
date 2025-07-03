@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты поиска</title>
+    <link rel="stylesheet" href="search.css"> <!-- Подключение CSS -->
+    <link rel="shortcut icon" href="img/sun-icon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Логотип агентсва" width="40px" height="40px">
+            <strong>Фортуна2</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="search.html">Услуги</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Поиск...">
+            <button>Найти</button>
+        </div>
+    </header>
+
+    <div id="#search-id" class="search">
+        <h1>Ппоиск маршрутов</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Регион</th>
+                    <th>Название маршрута</th>
+                    <th>Предполагаемые даты</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Алтай</td>
+                    <td>Золотое кольцо Алтая</td>
+                    <td>10.07.2024 - 20.07.2024</td>
+                    <td><a href="booking.html?region=altai&route=golden_ring&dates=10.07.2024-20.07.2024">Забронировать</a></td>
+                </tr>
+                <tr>
+                    <td>Байкал</td>
+                    <td>Кругобайкальская железная дорога</td>
+                    <td>01.08.2024 - 07.08.2024</td>
+                    <td><a href="booking.html?region=baikal&route=circumbaikal&dates=01.08.2024-07.08.2024">Забронировать</a></td>
+                </tr>
+                <tr>
+                    <td>Карелия</td>
+                    <td>Кижи и Валаам</td>
+                    <td>15.08.2024 - 22.08.2024</td>
+                    <td><a href="booking.html?region=karelia&route=kizhi_valaam&dates=15.08.2024-22.08.2024">Забронировать</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><a href="../index.html">Вернуться на главную</a></p>
+    </div> 
+    
+    <footer>
+        <div class="sitemap">
+
+            <ul>
+                <li>
+                <a href="../index.html"><h2>Главная страница</h2></a>
+                <ul>
+                    <li><a href="../index.html#search-tour">Поиск маршрута</a></li>
+                    <li><a href="../index.html#how">Как забронировать тур</a></li>
+                    <li><a href="../index.html#reviews">Отзывы</a></li>
+                    <li><a href="../index.html#subscribe">Подписка на обновления</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="about.html"><h2>О компании</h2></a>
+                <ul>
+                    <li><a href="about.html#goal">Цель</a></li>
+                    <li><a href="about.html#info">Общая информация</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="search.html"><h2>Услуги</h2></a>
+                <ul>
+                    <li><a href="search.html#search-id">Поиск маршрутов</a></li>
+                    <li><a href="booking.html#booking-id">Бронь маршрута</a></li>
+                </ul>
+                </li>
+
+                <li>
+                <a href="contacts.html"><h2>Контакты</h2></a>
+                <ul>
+                    <li>Телефон: +7(812) ХХХ-ХХ-ХХ</li>
+                    <li>Email: <a href="mailto:info@fortuna-2.ru">info@fortuna-2.ru</a></li>
+                    <li>Адрес: Фортунная ул.11</li>
+                    <li>Инстаграм: <a href="https://instagram.com/fortyna2" target="_blank">@fortyna2</a></li>
+                    <li>Фейсбук: <a href="https://facebook.com/fortyna2" target="_blank">@fortyna2</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

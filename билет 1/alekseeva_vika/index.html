@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотостудия</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Логотип SPBFOTO1" width="40px" height="40px">
+            <strong>SPBFOTO</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="assets/about.html">О нас</a></li>
+                <li><a href="assets/services.html">Наши услуги</a></li>
+                <li><a href="assets/contacts.html">Контакты</a></li>
+                <li><a href="assets/gallery.html">Галерея работ</a></li>
+
+            </ul>
+        </nav>
+        
+        <div class="social-links">
+            
+            <a href="#"><img src="assets/img/facebook.png" alt="Логотип Facebook" width="30px" height="30px"></a>
+            
+            <a href="#"><img src="assets/img/instagram.png" alt="Логотип Instagram" width="30px" height="30px"></a>
+        </div>
+    </header>
+
+    <main id="#order">
+        <section class="booking">
+            <h2>Заказать мероприятие</h2>
+            <form>
+                <input type="text" placeholder="ФИО" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="email" placeholder="Электронная почта" required>
+                <input type="date" placeholder="Предполагаемая дата" required>
+                <button class="submit" type="submit">Отправить</button>
+            </form>
+        </section>
+
+        
+        <section id="#portfolio" class="gallery">
+            <h2>Примеры работ</h2>
+            <div class="banner">
+                <div class="gallery-item">
+                    <img src="assets/img/gallery1.png" alt="Работа 1">
+                    <span>Фотосъемка мероприятий</span>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/img/gallery2.jpg" alt="Работа 2">
+                    <span>Семейная фотосессия</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/gallery3.jpg" alt="Работа 3">
+                    <span>Съемка для бизнеса</span>
+                </div>
+                
+            </div>
+
+              <h3 id="#foto">За кулисами фотосессии</h3>
+                <div class="animated-image-wrapper">
+                    <img src="assets/img/behind-the-scenes.gif" alt="Анимация процесса съемки">
+                </div>
+            
+            </div>
+        </section>
+
+        <!-- <section class="services">
+            <h2>Наши услуги</h2>
+            <div class="service-item">
+                <h3>Фотосъемка мероприятий</h3>
+                <p>Стоимость: 5000 руб.</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="service-item">
+                <h3>Семейная фотосессия</h3>
+                <p>Стоимость: 3000 руб.</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="service-item">
+                <h3>Съемка для бизнеса</h3>
+                <p>Стоимость: 7000 руб.</p>
+                <a href="#">Подробнее</a>
+            </div>
+        </section> -->
+        
+        <section id="#studios-id" class="studios">
+            <h2>Интерьерные студии</h2>
+            <div class="studio-banner">
+                <div class="studio-item">
+                    <img src="assets/img/st-1.jpg" alt="Студия А">
+                    <p>Студия A - 10000 руб.</p>
+                </div>
+                <div class="studio-item">
+                    <img src="assets/img/st-2.jpg" alt="Студия В">
+                    <p>Студия B - 8000 руб.</p>
+                </div>
+                <!-- Анимация и описание -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="sitemap">
+            <div class="column">
+                <a href="index.html"><h3>Главная</h3></a>
+                <ul>
+                    <li><a href="#order">Заказать мероприятие</a></li>
+                    <li><a href="#foto">За кулисами фотосессии</a></li>
+                    <li><a href="#portfolio">Примеры работ</a></li>
+                    <li><a href="#studios-id">Студии</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <a href="assets/about.html"><h3>О нас</h3></a>
+                <ul>
+                    <li><a href="assets/about.html#offer">Что мы предлагаем</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <a href="assets/services.html"><h3>Наши услуги</h3></a>
+                <ul>
+                    <li><a href="assets/services.html#event">Фотосъемка мероприятий</a></li>
+                    <li><a href="assets/services.html#family">Семейная фотосессия</a></li>
+                    <li><a href="assets/services.html#business">Съемка для бизнеса</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <a href="assets/contacts.html"><h3>Контакты</h3></a>
+                <ul>
+                    <li>Телефон: +7 (123) 456-78-90</li>
+                    <li><a href="mailto:info@spbfoto1.ru">info@spbfoto1.ru</a></li>
+                    <li>Адрес: Фоточная ул.11</li>
+                    <li><a href="https://instagram.com/fotobodka" target="_blank">Instagram</a></li>
+                    <li><a href="https://facebook.com/fotobodka" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <a href="assets/gallery.html"><h3>Галерея</h3></a>
+                <ul>
+                    <li><a href="assets/gallery.html#photos">Фотографии</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2025 SPBFOTO | Все права защищены.</p>
+</footer>
+
+</body>
+</html>

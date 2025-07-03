@@ -1,0 +1,202 @@
+/* Общие стили для сайта */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Шапка сайта */
+header {
+    background: #4c77af;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Фиксируем шапку */
+    top: 0; /* Устанавливаем на верхнюю часть экрана */
+    left: 0; /* Устанавливаем на левую границу экрана */
+    width: 100%; /* Ширина на всю ширину экрана */
+    z-index: 1; /* Обеспечиваем, чтобы шапка была над другими элементами */
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+header strong {
+    margin-left: 20px;
+}
+header img {
+    margin-left: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center; /* вертикальное выравнивание */
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .search-box {
+    display: flex;
+}
+
+header .search-box input {
+    padding: 5px;
+    border: none;
+}
+
+header .search-box button {
+    padding: 5px 10px;
+    background-color: #4c77af;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.search-box{
+    margin-right: 50px;
+}
+.search {
+  width: 90%;
+  margin: 10% auto 40px auto; /* 10% сверху, по центру по горизонтали */
+  padding: 30px;
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* Заголовок */
+.search h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1e40af;
+}
+
+/* Таблица */
+.search table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.search thead {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.search th, .search td {
+  padding: 14px 20px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.search tbody tr:hover {
+  background-color: #f1f5f9;
+  transition: background-color 0.3s ease;
+}
+
+/* Кнопка-ссылка */
+.search a {
+  color: #ffffff;
+  background-color: #4c77af;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.search a:hover {
+  background-color: #1e3a8a;
+  color: #e2e8f0;
+}
+
+/* Ссылка "вернуться на главную" */
+.search p a {
+  background-color: transparent;
+  color: #2563eb;
+  font-weight: normal;
+  text-decoration: underline;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.search p {
+  margin-top: 20px;
+}
+
+footer {
+    background-color: #4c77af;
+    color: white;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+footer .sitemap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+footer .sitemap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .sitemap > ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer .sitemap > ul > li {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+footer .sitemap h1 {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer .sitemap h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+footer .sitemap li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: text-decoration 0.2s ease;
+}
+
+footer .sitemap li a:hover {
+    text-decoration: underline;
+}
